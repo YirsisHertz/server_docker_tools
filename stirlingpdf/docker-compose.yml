@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+  stirling-pdf:
+    container_name: stirlingpdf
+    image: frooodle/s-pdf:latest
+    ports:
+      - 8100:8080
+    volumes:
+      - ./trainingData:/usr/share/tesseract-ocr/4.00/tessdata
+    environment:
+      APP_LOCALE: es_MX
+      APP_HOME_NAME: BatiPDF
+      APP_NAVBAR_NAME: BatiPDF
+      APP_ROOT_PATH: /
+      APP_HOME_DESCRIPTION: BatiPDF
+      ALLOW_GOOGLE_VISIBILITY: false

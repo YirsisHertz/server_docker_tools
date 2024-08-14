@@ -1,0 +1,42 @@
+version: "3"
+services:
+  pihole:
+    container_name: pihole
+    image: pihole/pihole:latest
+    ports:
+      - "53/tcp"
+      - "53/udp"
+      - "67:67/udp"
+      - "80:80/tcp"
+    environment:
+      TZ: "America/Mexico_City"
+      WEBPASSWORD: "root"
+      DNSMASQ_LISTENING: "all"
+      FTLCONF_REPLY_ADDR4: "192.168.100.30"
+      PIHOLE_DNS_: "9.9.9.9;1.1.1.1"
+      FTLCONF_LOCAL_IPV4: 192.168.100.30
+      ServerIP: "192.168.100.30"
+      VIRTUAL_HOST: "pihole.dns"
+      PIHOLE_DOMAIN: "local"
+      DNSMASQ_USER: "root"
+      CUSTOM_CACHE_SIZE: "10000"
+      DHCP_ACTIVE: "true"
+      DHCP_IPv6: "false"
+      IPv6: "false"
+      DHCP_START: "192.168.100.2"
+      DHCP_END: "192.168.100.254"
+      DHCP_ROUTER: "192.168.100.1"
+      DHCP_LEASETIME: "24"
+      DHCP_rapid_commit: "true"
+      DNS_BOGUS_PRIV: "true"
+      DNS_FQDN_REQUIRED: "true"
+    volumes:
+      - "./etc-pihole:/etc/pihole"
+      - "./etc-dnsmasq.d:/etc/dnsmasq.d"
+    dns:
+      - 127.0.0.1
+      - 1.1.1.1
+    cap_add:
+      - NET_ADMIN
+    restart: unless-stopped
+

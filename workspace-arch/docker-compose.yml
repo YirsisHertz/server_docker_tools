@@ -1,0 +1,6 @@
+version: '3.9'
+services:
+  workspace:
+    image: archlinux:latest
+    container_name: workspace
+    network_mode: host

@@ -1,0 +1,8 @@
+version: '3.9'
+services:
+  ittools:
+    container_name: ittools
+    image: corentinth/it-tools
+    ports:
+      - 8092:80
+    restart: always

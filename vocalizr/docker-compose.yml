@@ -1,0 +1,7 @@
+version: '3.9'
+services:
+  vocalizr:
+    container_name: vocalizr
+    image: timofeyn/vocalizr-base-php
+    ports:
+      - 9000:9000

@@ -1,0 +1,32 @@
+version: "3.9"
+services:
+  filebrowserc:
+    image: filebrowser/filebrowser
+    container_name: fbc
+    ports:
+      - "81:80"
+    user: 0:0
+    volumes:
+      - ./.filebrowser.json:/.filebrowser.json
+      - ./filebrowser.db:/database.db
+      - c:\Users\yirsi:/srv
+  filebrowsere:
+    image: filebrowser/filebrowser
+    container_name: fbe
+    ports:
+      - "82:80"
+    user: 0:0
+    volumes:
+      - ./.filebrowser2.json:/.filebrowser.json
+      - ./filebrowser2.db:/database.db
+      - e:\:/srv
+  filebrowserrecording:
+    image: filebrowser/filebrowser
+    container_name: fbRecording
+    ports:
+      - "80:80"
+    user: 0:0
+    volumes:
+      - ./.filebrowser3.json:/.filebrowser.json
+      - ./filebrowser3.db:/database.db
+      - E:\recording:/srv
