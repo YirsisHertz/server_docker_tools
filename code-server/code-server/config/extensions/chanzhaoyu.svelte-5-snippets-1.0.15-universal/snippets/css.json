@@ -1,0 +1,6 @@
+{
+  "Svelte css global": {
+    "prefix": "s-css-global",
+    "body": [":global(${1}) {", "  ${0}", "}"]
+  }
+}

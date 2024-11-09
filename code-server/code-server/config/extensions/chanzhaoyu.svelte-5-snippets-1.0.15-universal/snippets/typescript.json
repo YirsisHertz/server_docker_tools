@@ -1,0 +1,137 @@
+{
+  "Svelte $state()": {
+    "prefix": "s-state",
+    "body": ["let state = \\$state(${0})"]
+  },
+  "Svelte $state.frozen()": {
+    "prefix": "s-state-frozen",
+    "body": ["let state = \\$state.frozen(${0})"]
+  },
+  "Svelte $state.snapshot()": {
+    "prefix": "s-state-snapshot",
+    "body": ["\\$state.snapshot(${0})"]
+  },
+  "Svelte $state.is()": {
+    "prefix": "s-state-is",
+    "body": ["\\$state.is(${1}, ${0})"]
+  },
+  "Svelte $derived()": {
+    "prefix": "s-derived",
+    "body": ["const value = \\$derived(${0});"]
+  },
+  "Svelte $derived.by() ": {
+    "prefix": "s-derived-by",
+    "body": ["const value = \\$derived.by(()=>{", "  ${0}", "})"]
+  },
+  "Svelte $effect()": {
+    "prefix": "s-effect",
+    "body": ["\\$effect(() => {", "  ${0}", "})"]
+  },
+  "Svelte $effect.pre()": {
+    "prefix": "s-effect-pre",
+    "body": ["\\$effect.pre(() => {", "  ${0}", "})"]
+  },
+  "Svelte $effect.tracking()": {
+    "prefix": "s-effect-tracking",
+    "body": [
+      "\\$effect(() => {",
+      "  console.log('in effect:', \\$effect.tracking());",
+      "})"
+    ]
+  },
+  "Svelte $effect.root()": {
+    "prefix": "s-effect-root",
+    "body": [
+      "const cleanup = \\$effect.root(() => {",
+      "  \\$effect(() => {",
+      "    ${0}",
+      "  })",
+      "",
+      "  return () => {",
+      "    ",
+      "  };",
+      "});"
+    ]
+  },
+  "Svelte Computed": {
+    "prefix": "s-computed",
+    "body": [
+      "let value = \\$state(\"\")",
+      "",
+      "let valueComputed = {",
+      "  get value() {",
+      "    return value;",
+      "  },",
+      "  set value(newValue) {",
+      "    value = newValue;",
+      "  }",
+      "};",
+      "${0}"
+    ]
+  },
+  "Svelte $props()": {
+    "prefix": "s-props",
+    "body": ["interface Props {${1}}", "", "let {${0}}: Props = \\$props();"]
+  },
+  "Svelte $host()": {
+    "prefix": "s-host",
+    "body": ["\\$host().dispatchEvent(", "  ${0}", ");"]
+  },
+  "Svelte flushSync": {
+    "prefix": "s-flush-sync",
+    "body": ["flushSync(() => {", "  ${0}", "})"]
+  },
+  "Svelte hook": {
+    "prefix": "s-hook",
+    "body": [
+      "export function useCounter() {",
+      "  let count = \\$state(0)",
+      "",
+      "  function increment() {",
+      "    count += 1;",
+      "  }",
+      "",
+      "  return {",
+      "    get count() {",
+      "      return count;",
+      "    },",
+      "    set count(newValue) {",
+      "      count = newValue;",
+      "    },",
+      "    increment",
+      "  };",
+      "}"
+    ]
+  },
+  "Svelte store": {
+    "prefix": "s-store",
+    "body": [
+      "import { writable } from 'svelte/store';",
+      "",
+      "export function createCounter() {",
+      "  const { subscribe, update } = writable(0);",
+      "",
+      "  function increment() {",
+      "    update((count) => count + 1);",
+      "  }",
+      "",
+      "  return {",
+      "    subscribe,",
+      "    increment",
+      "  };",
+      "}"
+    ]
+  },
+  "Svelte setContext()": {
+    "prefix": "s-set-context",
+    "body": ["setContext(\"${1:key}\", ${0:value});"]
+  },
+  "Svelte getContext()": {
+    "prefix": "s-get-context",
+    "body": ["const context = getContext(${0:key});"]
+  },
+  "Svelte hasContext()": {
+    "prefix": "s-has-context",
+    "body": ["if (hasContext('${1:key}')) {", "  ${0}", "}"]
+  }
+}

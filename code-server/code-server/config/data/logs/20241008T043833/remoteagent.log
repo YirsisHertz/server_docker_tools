@@ -1,0 +1,35 @@
+2024-10-08 04:38:33.367 [info] 
+
+
+
+
+2024-10-08 04:38:33.381 [info] Extension host agent started.
+2024-10-08 04:38:33.410 [info] Started initializing default profile extensions in extensions installation folder. file:///config/extensions
+2024-10-08 04:38:33.446 [info] Completed initializing default profile extensions in extensions installation folder. file:///config/extensions
+2024-10-08 04:38:34.684 [info] [172.23.0.1][baa16ae8][ManagementConnection] New connection established.
+2024-10-08 04:38:35.576 [info] [172.23.0.1][47472f5d][ExtensionHostConnection] New connection established.
+2024-10-08 04:38:35.688 [info] [172.23.0.1][47472f5d][ExtensionHostConnection] <232> Launched Extension Host Process.
+2024-10-08 04:39:26.408 [info] Getting Manifest... svelte.svelte-vscode
+2024-10-08 04:39:27.433 [info] Installing extension: svelte.svelte-vscode {"isMachineScoped":false,"installPreReleaseVersion":false,"pinned":false,"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"profileLocation":{"$mid":1,"fsPath":"/config/extensions/extensions.json","external":"file:///config/extensions/extensions.json","path":"/config/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.93.1","date":"2024-09-19T10:15:30.023Z"}}
+2024-10-08 04:39:30.133 [info] Getting Manifest... chanzhaoyu.svelte-5-snippets
+2024-10-08 04:39:30.519 [info] Installing extension: chanzhaoyu.svelte-5-snippets {"isMachineScoped":false,"installPreReleaseVersion":false,"pinned":false,"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"profileLocation":{"$mid":1,"fsPath":"/config/extensions/extensions.json","external":"file:///config/extensions/extensions.json","path":"/config/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.93.1","date":"2024-09-19T10:15:30.023Z"}}
+2024-10-08 04:39:31.519 [info] Extracted extension to file:///config/extensions/chanzhaoyu.svelte-5-snippets-1.0.15-universal: chanzhaoyu.svelte-5-snippets
+2024-10-08 04:39:31.553 [info] Renamed to /config/extensions/chanzhaoyu.svelte-5-snippets-1.0.15-universal
+2024-10-08 04:39:31.700 [info] Extension installed successfully: chanzhaoyu.svelte-5-snippets file:///config/extensions/extensions.json
+2024-10-08 04:40:12.337 [info] Extracted extension to file:///config/extensions/svelte.svelte-vscode-109.0.3-universal: svelte.svelte-vscode
+2024-10-08 04:40:12.359 [info] Renamed to /config/extensions/svelte.svelte-vscode-109.0.3-universal
+2024-10-08 04:40:12.418 [info] Extension installed successfully: svelte.svelte-vscode file:///config/extensions/extensions.json
+2024-10-08 04:42:56.319 [info] Getting Manifest... pivaszbs.svelte-autoimport
+2024-10-08 04:42:57.124 [info] Installing extension: pivaszbs.svelte-autoimport {"isMachineScoped":false,"installPreReleaseVersion":false,"pinned":false,"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"profileLocation":{"$mid":1,"fsPath":"/config/extensions/extensions.json","external":"file:///config/extensions/extensions.json","path":"/config/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.93.1","date":"2024-09-19T10:15:30.023Z"}}
+2024-10-08 04:42:58.077 [info] Extracted extension to file:///config/extensions/pivaszbs.svelte-autoimport-1.0.4-universal: pivaszbs.svelte-autoimport
+2024-10-08 04:42:58.090 [info] Renamed to /config/extensions/pivaszbs.svelte-autoimport-1.0.4-universal
+2024-10-08 04:42:58.137 [info] Extension installed successfully: pivaszbs.svelte-autoimport file:///config/extensions/extensions.json
+2024-10-08 04:42:59.715 [info] Uninstalling extension from the profile: chanzhaoyu.svelte-5-snippets@1.0.15 file:///config/extensions/extensions.json
+2024-10-08 04:42:59.769 [info] Marked extension as uninstalled chanzhaoyu.svelte-5-snippets-1.0.15-universal
+2024-10-08 04:43:00.011 [info] Successfully uninstalled extension from the profile chanzhaoyu.svelte-5-snippets@1.0.15 file:///config/extensions/extensions.json
+2024-10-08 04:43:53.877 [info] Uninstalling extension from the profile: svelte.svelte-vscode@109.0.3 file:///config/extensions/extensions.json
+2024-10-08 04:43:53.937 [info] Marked extension as uninstalled svelte.svelte-vscode-109.0.3-universal
+2024-10-08 04:43:54.188 [info] Successfully uninstalled extension from the profile svelte.svelte-vscode@109.0.3 file:///config/extensions/extensions.json
+2024-10-08 04:43:55.627 [info] Uninstalling extension from the profile: pivaszbs.svelte-autoimport@1.0.4 file:///config/extensions/extensions.json
+2024-10-08 04:43:55.670 [info] Marked extension as uninstalled pivaszbs.svelte-autoimport-1.0.4-universal
+2024-10-08 04:43:55.758 [info] Successfully uninstalled extension from the profile pivaszbs.svelte-autoimport@1.0.4 file:///config/extensions/extensions.json

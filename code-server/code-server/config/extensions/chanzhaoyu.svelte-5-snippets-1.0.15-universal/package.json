@@ -1,0 +1,86 @@
+{
+	"name": "svelte-5-snippets",
+	"displayName": "Svelte 5 Snippets",
+	"description": "svelte5 and svelte-kit snippets for vscode",
+	"version": "1.0.15",
+	"license": "MIT",
+	"publisher": "Chanzhaoyu",
+	"author": {
+		"name": "Chanzhaoyu",
+		"url": "https://github.com/Chanzhaoyu"
+	},
+	"bugs": {
+		"url": "https://github.com/Chanzhaoyu/svelte-5-snippets/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Chanzhaoyu/svelte-5-snippets"
+	},
+	"engines": {
+		"vscode": "^1.0.0"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"icon": "icon.png",
+	"contributes": {
+		"languages": [
+			{
+				"id": "svelte",
+				"aliases": [
+					"Svelte",
+					"svelte"
+				],
+				"filenamePatterns": [
+					"*.svelte"
+				]
+			}
+		],
+		"snippets": [
+			{
+				"language": "svelte",
+				"path": "./snippets/svelte.json"
+			},
+			{
+				"language": "svelte",
+				"path": "./snippets/svelte-kit.json"
+			},
+			{
+				"language": "typescript",
+				"path": "./snippets/svelte-kit.json"
+			},
+			{
+				"language": "svelte",
+				"path": "./snippets/html.json"
+			},
+			{
+				"language": "typescript",
+				"path": "./snippets/typescript.json"
+			},
+			{
+				"language": "javascript",
+				"path": "./snippets/typescript.json"
+			},
+			{
+				"language": "css",
+				"path": "./snippets/css.json"
+			}
+		]
+	},
+	"scripts": {
+		"publish": "vsce publish"
+	},
+	"__metadata": {
+		"id": "4ab27b74-4bc3-48aa-b268-7b7461d938e9",
+		"publisherId": "bd2ea3e9-a792-4565-af31-24dd8ae70044",
+		"publisherDisplayName": "Chanzhaoyu",
+		"targetPlatform": "universal",
+		"isApplicationScoped": false,
+		"isPreReleaseVersion": false,
+		"hasPreReleaseVersion": false,
+		"installedTimestamp": 1728362371278,
+		"pinned": false,
+		"preRelease": false,
+		"source": "gallery"
+	}
+}
